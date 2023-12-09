@@ -15,10 +15,10 @@ class data_validation:
     def input_validation(self, input_list):
         for input_data in input_list:
             if self.is_valid(input_data):
-               self.valid_integers.append(int(input_data))i
+               self.valid_integers.append(int(input_data))
      
 
-     def get_val_int(self):
+    def get_val_int(self):
         return self.valid_integers
 
 
