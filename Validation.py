@@ -10,4 +10,9 @@ class data_validation:
         if re.match(r'^[1-9]\d*$', input_data):
             return True
         else: 
-            retun False
+            retun False    
+            
+     def input_validation(self, input_list):
+        for input_data in input_list:
+            if self.is_valid(input_data):
+                self.valid_integers.append(int(input_data))
